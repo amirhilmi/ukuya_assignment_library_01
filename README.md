@@ -1,18 +1,17 @@
-# FINISHED Domain-Driven Design + Firebase Flutter Course
 
-## Repository which is updated on a per-part basis is available [here](https://github.com/ResoCoder/flutter-ddd-firebase-course).
 
-### This project is provided "as is" and may not be updated in sync with the tutorial series. Principles will remain the same but the code might be a bit different.
 
-Note: You need to provide your own Firebase configuration files in order to run this.
+Create a library app using Flutter. The app should be able to:
 
-### The whole accompanying tutorial series is available in :point_right: [these articles & videos](https://resocoder.com/flutter-firebase-ddd-course) :point_left:.
+2.1 Register as a new user
+2.2 Login
+2.3 Borrow a book
+2.4 Show a list of borrowed books
 
-#### _Find more tutorials on [resocoder.com](https://resocoder.com)_
+2.5 Show the details of a borrowed book:
+2.5.1 Name
+2.5.2 Author
+2.5.3 Borrowed date
+2.5.4 Remaining time to return
 
-<br />
-<br />
-
-[![Reso Coder](https://resocoder.com/wp-content/uploads/2019/09/logo_with_text_signature.png)](https://resocoder.com)
-<br />
-_Be prepared for **real** app development_
+2.6 Return a borrowed book
