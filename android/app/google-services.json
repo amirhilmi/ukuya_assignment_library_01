@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "294862039706",
+    "firebase_url": "https://my-first-5bdd0.firebaseio.com",
+    "project_id": "my-first-5bdd0",
+    "storage_bucket": "my-first-5bdd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294862039706:android:02af0fbb022d8b5b3ecd23",
+        "android_client_info": {
+          "package_name": "com.resocoder.finished_notes_firebase_ddd_course"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294862039706-k8rupopc1t1von3u5vu87ojroma572bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWjfQB0qgEa0rS67F8Yr520TONq8GcoB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294862039706-k8rupopc1t1von3u5vu87ojroma572bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
