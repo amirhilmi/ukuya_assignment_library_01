@@ -11,7 +11,7 @@ import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/note
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/notes_overview/widgets/uncompleted_switch.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/routes/router.gr.dart';
 
-class NotesOverviewPage extends HookWidget implements AutoRouteWrapper {
+class NotesOverviewPage2 extends HookWidget implements AutoRouteWrapper {
   @override
   Widget get wrappedRoute => MultiBlocProvider(
         providers: [
@@ -61,7 +61,7 @@ class NotesOverviewPage extends HookWidget implements AutoRouteWrapper {
       ],
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Library Book Lists'),
+          title: const Text('My Borrowing'),
           leading: IconButton(
             icon: Icon(Icons.exit_to_app),
             onPressed: () {
@@ -75,26 +75,26 @@ class NotesOverviewPage extends HookWidget implements AutoRouteWrapper {
         body: NotesOverviewBody(),
         floatingActionButton: Stack(
           children: <Widget>[
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: FloatingActionButton(
-                heroTag: null,
-                onPressed: () {
-                  Router.navigator.pushNamed(
-                    Router.noteFormPage,
-                    arguments: NoteFormPageArguments(editedNote: null),
-                  );
-                },
-                child: Icon(Icons.add),
-              ),
-            ),
+            // Align(
+            //   alignment: Alignment.bottomCenter,
+            //   child: FloatingActionButton(
+            //     heroTag: null,
+            //     onPressed: () {
+            //       Router.navigator.pushNamed(
+            //         Router.noteFormPage,
+            //         arguments: NoteFormPageArguments(editedNote: null),
+            //       );
+            //     },
+            //     child: Icon(Icons.add),
+            //   ),
+            // ),
             Align(
               alignment: Alignment.bottomRight,
               child: FloatingActionButton(
                 heroTag: null,
                 onPressed: () {
                   Router.navigator.pushNamed(
-                    Router.notesOverviewPage2,
+                    Router.notesOverviewPage,
                     arguments: NoteFormPageArguments(editedNote: null),
                   );
                 },
@@ -103,7 +103,6 @@ class NotesOverviewPage extends HookWidget implements AutoRouteWrapper {
             ),
           ],
         ),
-        
       ),
     );
   }

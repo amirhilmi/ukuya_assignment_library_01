@@ -12,12 +12,14 @@ import 'package:finished_notes_firebase_ddd_course/presentation/pages/sign_in/si
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/notes_overview/notes_overview_page.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/note_form/note_form_page.dart';
 import 'package:finished_notes_firebase_ddd_course/domain/notes/note.dart';
+import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/notes_overview_2/notes_overview_page_2.dart';
 
 class Router {
   static const splashPage = '/';
   static const signInPage = '/sign-in-page';
   static const notesOverviewPage = '/notes-overview-page';
   static const noteFormPage = '/note-form-page';
+  static const notesOverviewPage2 = '/notes-overview-page2';
   static final navigator = ExtendedNavigator();
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final args = settings.arguments;
@@ -47,6 +49,11 @@ class Router {
               key: typedArgs.key, editedNote: typedArgs.editedNote),
           settings: settings,
           fullscreenDialog: true,
+        );
+      case Router.notesOverviewPage2:
+        return MaterialPageRoute<dynamic>(
+          builder: (_) => NotesOverviewPage2().wrappedRoute,
+          settings: settings,
         );
       default:
         return unknownRoutePage(settings.name);

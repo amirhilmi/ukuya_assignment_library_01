@@ -23,7 +23,7 @@ class AddTodoTile extends StatelessWidget {
         return ListTile(
           enabled: !state.note.todos.isFull,
           title: Text(
-            'Add a todo',
+            'Add book details',
           ),
           leading: Padding(
             padding: const EdgeInsets.all(12.0),

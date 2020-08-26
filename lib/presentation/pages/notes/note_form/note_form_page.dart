@@ -125,7 +125,7 @@ class NoteFormPageScaffold extends StatelessWidget {
           title: BlocBuilder<NoteFormBloc, NoteFormState>(
             condition: (p, c) => p.isEditing != c.isEditing,
             builder: (context, state) =>
-                Text(state.isEditing ? 'Edit a note' : 'Create a note'),
+                Text(state.isEditing ? 'Edit  book detail' : 'Add new book'),
           ),
           actions: <Widget>[
             Builder(

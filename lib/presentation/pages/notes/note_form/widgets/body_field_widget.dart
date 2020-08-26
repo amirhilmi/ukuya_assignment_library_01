@@ -29,7 +29,7 @@ class BodyField extends HookWidget {
           child: TextFormField(
             controller: textEditingController,
             decoration: InputDecoration(
-              labelText: 'Note',
+              labelText: 'Book Title',
               counterText: '',
             ),
             maxLength: NoteBody.maxLength,

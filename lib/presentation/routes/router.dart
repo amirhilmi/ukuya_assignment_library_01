@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route_annotations.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/note_form/note_form_page.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/notes_overview/notes_overview_page.dart';
+import 'package:finished_notes_firebase_ddd_course/presentation/pages/notes/notes_overview_2/notes_overview_page_2.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/sign_in/sign_in_page.dart';
 import 'package:finished_notes_firebase_ddd_course/presentation/pages/splash/splash_page.dart';
 
@@ -12,4 +13,5 @@ class $Router {
   NotesOverviewPage notesOverviewPage;
   @MaterialRoute(fullscreenDialog: true)
   NoteFormPage noteFormPage;
+  NotesOverviewPage2 notesOverviewPage2;
 }
